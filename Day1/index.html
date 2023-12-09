@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <ul>
+        <li><a class="hi" href="C:\Users\Ashok\Downloads\soundariya\CSS\login.html">Back</a></li>
+    </ul> -->
+    <div class="di">
+        <form class="container" onsubmit="fun()">
+            <h1 class="m">Registration Form</h1>
+            <input type="text" name="" id="user" placeholder="Your name"class="mad">
+            <input type="password" name="" id="Password" placeholder="Password" class="mad">
+            <input type="password" name="" id="ConfirmPassword" placeholder="Confirm Password" class="mad">
+            <input type="email" name="" id="Email" placeholder="Email" class="mad">
+            <input type="number" name="" id="number"placeholder="Number" class="mad">
+            <!-- <input type="date" name="" id="date"placeholder="Date" class="mad"> -->
+            <button class="fir">submit</button>
+            </form>
+        </div>
+        <script>
+            function fun()
+            {
+                let x=document.getElementById("user").value;
+                let y=document.getElementById("Password").value;
+                let y1=document.getElementById("ConfirmPassword").value;
+                let z=document.getElementById("Email").value;
+                let a=document.getElementById("number").value;
+                let b=document.getElementById("date").value;
+                alert("registered! "+x+"\n"+y+"\n"+z+"\n"+a+"\n"+b);
+            if(confirm("sure ?"))
+            {
+                if(y==y1)
+                {
+                    alert("Password Matched");
+                }
+            }
+                else
+                {
+                    alert("Password Mismatched");
+                }
+
+            }
+        </script>
+</body>
+</html>
