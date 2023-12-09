@@ -1,0 +1,91 @@
+body{
+    height:100vh;
+    width:100vw;
+    margin:0px;
+    background-color: lightgrey;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #C9FFBF;
+    /* background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF); 
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF);  */
+    /* background:url("https://b.kisscc0.com/20180813/uaq/kisscc0-night-sky-star-computer-icons-astronomy-starry-sky-at-night-5b713f127b6a25.9642252515341483705055.png"); */
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA0L3JtNjQ2LWJhY2tncm91bmQtYm0tMDUtZy5qcGc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container
+{
+    height:80vh;
+    width:25vw;
+    /* background-color: white; */
+    flex-direction: column;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    border:none;
+    border-radius:1rem;
+    background: transparent;
+    border:2px solid rgb(229, 229, 238);
+    backdrop-filter: blur(5px);
+    font-size:larger;
+    /* box-shadow:
+    2.8px 2.8px 2.2px white,
+    6.7px 6.7px 2.3px white,
+    12.5px 12.5px 3px white,
+    22.3px 22.3px 2px white,
+    41.8px 41.8px 3.4px white,
+    100px 100px 80px white;  */
+}
+::placeholder
+{
+    color:#fff;
+}
+
+.fir
+{
+    height:6vh;
+    width:19vw;
+    margin:none;
+    display:flex;
+    border:none;
+    justify-content:center;
+    align-items: center;
+    background-color:white;
+    font-size:large;
+    border-radius:0.5rem;
+} 
+.mad
+{
+    height:4vh;
+    width:18vw;
+    margin:none;
+    padding:0.5rem;
+    border:none;
+    border-radius:0.5rem;
+    /* background-color: bisque; */
+    background: transparent;
+    border:2px solid rgb(229, 229, 238);
+    backdrop-filter: blur(5px);
+    /* color:#fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    
+}
+.mad:focus{
+    outline:none;
+    border-bottom: 3px solid blueviolet;
+}
+.m
+{
+    color:white;
+}
+.hi
+{
+text-decoration: none;
+color:#fff;
+}
+
