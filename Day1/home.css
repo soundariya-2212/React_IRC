@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+*
+{
+height:3.5vh;
+box-sizing:border-box;
+text-decoration:none;
+padding:0;
+margin:0;
+}
+body
+{
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA0L3JtNjQ2LWJhY2tncm91bmQtYm0tMDUtZy5qcGc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.li a
+{
+    font-family: 'Kalnia', serif;
+    font-weight:400;
+    font-size: 16px;
+    color:#fff; 
+    text-decoration: none;
+}
+.header
+{
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 10%;
+}
+.navlinks
+{
+    list-style: none;
+    justify-content: flex-end;
+    padding-left:70rem;
+}
+.navlinks li{
+    justify-content: end;
+    display:inline-block;
+    padding:0px 10px;
+}
+.navlinks li a
+{
+    transition: all 0.3s ease 0s;
+}
+.navlinks li a:hover{
+    color:blueviolet
+}
+.hh
+{
+    font-family: 'kalnia',serif;
+    font-family: 'Kalnia', serif;
+    font-weight:400;
+    font-size: 16px;
+    color:#fff; 
+    text-decoration: none;
+}
+

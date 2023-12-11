@@ -1,9 +1,11 @@
 import './Assets/CSS/style.css'
+import Nav from "./Components/Nav.js"
 function App()
 {
     return(
-        <div>
-         <form class="container" onsubmit="fun()">
+        <div class="soundariya">
+        <Nav/>
+         <form class="container">
             <h1 class="m">Registration Form</h1>
             <input type="text" name="" id="user" placeholder="Your name"class="mad"/>
             <input type="password" name="" id="Password" placeholder="Password" class="mad"/>

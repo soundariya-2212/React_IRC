@@ -3,9 +3,7 @@ body{
     width:100vw;
     margin:0px;
     background-color: lightgrey;
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    /* display:flex; */
     background: #C9FFBF;
     /* background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF); 
     background: linear-gradient(to right, #FFAFBD, #C9FFBF);  */
@@ -14,6 +12,14 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+.soundariya{
+    
+    justify-content:center;
+    align-items: center; 
+    padding-top:80px;
+    display:flex;
 
 }
 .container
@@ -33,13 +39,6 @@ body{
     border:2px solid rgb(229, 229, 238);
     backdrop-filter: blur(5px);
     font-size:larger;
-    /* box-shadow:
-    2.8px 2.8px 2.2px white,
-    6.7px 6.7px 2.3px white,
-    12.5px 12.5px 3px white,
-    22.3px 22.3px 2px white,
-    41.8px 41.8px 3.4px white,
-    100px 100px 80px white;  */
 }
 ::placeholder
 {
@@ -71,9 +70,6 @@ body{
     background: transparent;
     border:2px solid rgb(229, 229, 238);
     backdrop-filter: blur(5px);
-    /* color:#fff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    
 }
 .mad:focus{
     outline:none;
@@ -83,9 +79,76 @@ body{
 {
     color:white;
 }
-.hi
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+ /* *
 {
-text-decoration: none;
-color:#fff;
+height:3.5vh;
+box-sizing:border-box;
+text-decoration:none;
+padding:0;
+margin:0;
+}  */
+/*  
+body
+{
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA0L3JtNjQ2LWJhY2tncm91bmQtYm0tMDUtZy5qcGc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.li,a
+{
+    
+    font-family: 'Kalnia', serif;
+    font-weight:400;
+    font-size: 16px;
+    color:#fff; 
+    text-decoration: none;
+}
+.header {
+   
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Align it to the top of the viewport */
+    width: 100vw; /* Make it full-width */
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5vh;
+    text-decoration:none;
+    margin:0;
+    /* padding-right:1000px; */
 }
 
+.navlinks {
+    list-style: none;
+    justify-content: flex-end;
+    /* Remove or adjust the padding as needed */
+}
+
+.navlinks li {
+    justify-content: end;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Kalnia', serif;
+}
+
+.navlinks li a:hover {
+    color: blueviolet;
+}
+.hh
+{
+    font-family: 'kalnia',serif;
+    font-family: 'Kalnia', serif;
+    font-weight:400;
+    font-size: 16px;
+    color:#fff; 
+    text-decoration: none;
+    display:inline-flex;
+}
