@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=PT+Serif:ital@0;1&family=Playfair+Display:ital@1&family=Whisper&display=swap');
 .navbar
 {
     left:0;
@@ -7,22 +8,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:7vh;
+    height:8vh;
     text-decoration:none;
     margin:0;
-    /* background: #FDC830;  
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
-    background: linear-gradient(to right, #F37335, #FDC830); */
-    background: #8b62bc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5f6f9a, #835db1);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #687fbe, #7c59a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar ul{
     display: flex;
     text-decoration:none;
     gap:20px;
-    padding-left:83vw;
+    left:0;
+    margin:0;
+    padding-left:0vw;
     font-style:italic;
 }
 li,a
@@ -31,27 +30,156 @@ li,a
     /* margin:0; */
     flex-direction: row;
     list-style: none;
-    color:#fff;
-}
-.hi
-{
-    margin:0;
+    color:#f0e7e7;
+    font-family: 'Kalnia', serif;
+    font-size:18px;
+    font-weight:bolder;
 }
 body
 {
-    /* background-image: url("https://wallpapers.com/images/hd/paris-eiffel-tower-desktop-bp251jvt7eakqvtp.jpg"); */
    background-image:url("https://wallpapers.com/images/hd/eiffel-tower-at-night-pictures-1920-x-1080-jeidfzhakooud574.jpg");
+   /* background-image:url(.) */
    background-size:cover;
    background-repeat:no-repeat;
    display:flex;
 }
+.mad
+{
+    color: rgb(41, 4, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+    padding-left: 2rem;
+    
+}
 .hello
 {
+    /* margin:0;
+    left:0;
     display:flex;
     justify-content:center;
-    align-items: center;
-    padding-top:280px;
-    padding-right:20px;
-    font-size:30px;
-    color:#fff;
+    align-items: center; */
+    padding-top:40px;
+    padding-left:20rem;
+    /* font-size:25px; */
+    /* color:#ebe8ed; */
+    color: rgb(41, 4, 80);
+    font-family: 'Kalnia', serif;
+    font-size:20px;
 }
+.meow
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding-left:18px;
+   padding-top:140px;
+}
+button
+{
+    background-color:#141516;
+    size:70px;
+}
+.not
+{
+    height:5vh;
+    border-radius:10px;
+    color:#ece7e7;
+    font-style:italic;
+}
+.cardBox {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+      rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  }
+  .cardbox-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  }
+  .card {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: #29034a;
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 2px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+     rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+  }
+  
+  .card .h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: .5;
+  }
+  
+  .card .content .h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .card .content p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+  .card .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card:hover .h4 {
+    opacity: 0;
+  }
+  
+  .cardBox::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 150%;
+    background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #bf00ff, #42126f, #125b54);
+    background: linear-gradient(to right, #510255, #741685, #035149);
+    transform-origin: center;
+    animation: glowing_401 5s linear infinite;
+  }
+  
+  @keyframes glowing_401 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
