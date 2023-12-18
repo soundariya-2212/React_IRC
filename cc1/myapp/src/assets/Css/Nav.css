@@ -23,6 +23,7 @@ ul{
     background: linear-gradient(to right, #414345, #121213); 
     color:#fff;
     padding-left:34rem;
+    /* overflow-x: hidden; */
 }
 .nav
 {
@@ -45,3 +46,7 @@ ul{
     color:white;
     list-style: none;
 }
+/* body
+{
+    overflow-y: hidden;
+} */

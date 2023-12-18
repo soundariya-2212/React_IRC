@@ -20,6 +20,7 @@ function App()
           <Route path="/Register" element={<Register/>}/>
           <Route path="/Review" element={<Review/>}/>
         </Routes>
+        {/* <Login/> */}
       </div>
       </>
       

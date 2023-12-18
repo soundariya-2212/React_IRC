@@ -263,5 +263,5 @@
 body
 {
     background-color:rgb(184, 179, 179);
-    overflow-y:hidden;
+    /* overflow-y:hidden; */
 }

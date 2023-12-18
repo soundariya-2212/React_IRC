@@ -12,6 +12,7 @@
 }
 ::placeholder{
     color:rgb(241, 236, 236);
+    border: black;
 }
 .m-wrapper
 {
@@ -54,11 +55,12 @@
     font-size: 20px;
     border-radius:0.5rem;
 } 
-.mad
+.mad-wrapper
 {
     background: transparent;
     color:#f4ecec;
     /* outline:none; */
+    border-color: black;
     height:7vh;
     width:18vw;
     padding:0.5rem;

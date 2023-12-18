@@ -11,8 +11,8 @@ function Nav()
             <ul class="navlinks-wrapper">
             <li class="title">.ThE MiLLIoNs.</li> 
             <Link to ='/Home'><li class="ji">HOME</li></Link>
-            <Link to ='/Login' ><li class="ji">LOGIN</li></Link>
             <Link to='/Register'><li class="ji">REGISTER</li></Link>
+            <Link to ='/Login' ><li class="ji">LOGIN</li></Link>
             <Link to='/Review'><li class="ji">REVIEW</li></Link>
             </ul>
         </div>
