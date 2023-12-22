@@ -1,82 +1,89 @@
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import '../assets/Css/Review.css';
 
-
 function Review() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchedBooks, setSearchedBooks] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [allBooks, setAllBooks] = useState([
+    {
+      title: 'the last true love story',
+      description: 'The Last True Love Story is a tender story that is as much about the meaning of family as it is about falling in love.',
+      rating: 5,
+      reviews: 1200,
+      image:'https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481429894/the-last-true-love-story-9781481429894_lg.jpg'
+    },
+    {
+      title: 'like a love story',
+      description: 'A wonderful book about something interesting.',
+      rating: 4.5,
+      reviews: 1200,
+      image:'https://richincolor.com/wp-content/uploads/2019/01/lovestory.jpg'
+    },
+    {
+      title: 'body in the wood',
+      description: 'He Body in the Woods was exciting and original. Realistic in detail, from the crime, to the secret lives and insecurities of today\'s teens.',
+      rating: 4,
+      reviews: 500,
+    },
+    {
+      title: 'because i am yours',
+      description: 'Claire Contreras is a New York Times Best Selling Author. Her books range from romantic suspense to contemporary romance.',
+      rating: 4.8,
+      reviews: 3000,
+    },
+  ]);
+
+  const [searchedBook, setSearchedBook] = useState(null);
 
   const handleSearch = () => {
-    // Perform the search logic here based on the searchQuery
-    // For now, let's just set dummy books for demonstration purposes
-    const dummyBooks = [
-      {
-        // title: 'The Last true love story',
-        description:"The Last True Love Story is a tender multi-generational story that's as much about the meaning of family as it is about falling in love",
-        rating: 4,
-        reviews: 1200,
-      },
-      {
-        // title: 'Sample Book 2',
-        description: 'Another sample book description.',
-        rating: 3,
-        reviews: 800,
-      },
-      // Add more books as needed
-    ];
+    const foundBook = allBooks.find(book => book.title.toLowerCase() === searchTerm.toLowerCase());
 
-    setSearchedBooks(dummyBooks);
+    // Update the state with the searched book details
+    setSearchedBook(foundBook);
   };
-
-  return (
-    <>
+  return(
+      <>  
       <div className="search">
         <input
           className="find"
           type="text"
           placeholder="Type the name of the book"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button type="button" className="mis" onClick={handleSearch}>
           SEARCH
         </button>
       </div>
 
-      {searchedBooks.length > 0 && (
+      {searchedBook && (
         <div className="wrapper">
-          {searchedBooks.map((book, index) => (
-            <div key={index} className="col" onTouchStart="this.classList.toggle('hover');">
-              <div className="container">
-                <div className="front">
-                  <div className="inner">
-                    <div className="hi">
-                      <h1>{book.title}</h1>
-                    </div>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <p>{book.description}</p>
-                    <div className="ratings">
-                      <p>Rating:</p>
-                      {[...Array(book.rating)].map((_, starIndex) => (
-                        <p key={starIndex} className="fa-sharp fa-solid fa-star"></p>
-                      ))}
-                    </div>
-                    <p>Reviews: {book.reviews}</p>
+          <div className="col" onTouchStart="this.classList.toggle('hover');">
+            <div className="container">
+              <div className="front">
+                <div className="inner">
+                  <div className={`hi`}>
+                    {/* <p>{searchedBook.title}</p> */}
+                    {/* <span>{searchedBook.author}</span> */}
                   </div>
                 </div>
               </div>
+              <div className="back">
+                <div className="inner">
+                  <p>{searchedBook.description}</p>
+                  <p className="fa-sharp fa-solid fa-star">{searchedBook.rating}</p>
+                  <p>{searchedBook.reviews} Reviews</p>
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
       )}
-  
+
+      {/* <Sidebar/>  */}
         {/* <div className="search">
         <input className="find" type="text" placeholder="Type the name of book"/>
         <button type="submit" class="mis">SEARCH</button>
-          </div> */}
+          </div>  */}
          <div>
          <div class="wrapper">
   <h1>BoOk ThAt StOlEd YoUr HeArTs</h1>
@@ -86,8 +93,8 @@ function Review() {
         <div class="front">
           <div class="inner">
             <div class="hi">
-            {/* <p></p>
-            <span></span> */}
+             <p></p>
+            <span></span>
             </div>
           </div>
         </div>
@@ -157,7 +164,7 @@ function Review() {
         </div>
         <div class="back">
           <div class="inner">
-            <p>"Claire Contreras is a New York Times Best Selling Author. Her books range from romantic suspense to contemporary romance and are currently translated into over fifteen languages".</p> 
+            <p>"Claire Contreras is a New York Times Best Selling Author. Her books range from romantic suspense to contemporary romance".</p> 
             <p class="fa-sharp fa-solid fa-star"></p>
             <p class="fa-sharp fa-solid fa-star"></p> 
             <p class="fa-sharp fa-solid fa-star"></p>

@@ -1,55 +1,11 @@
-import React  from 'react';
-import {useNavigate } from 'react-router-dom';
-import { Menu } from 'lucide-react';
-import '../assets/Css/Dashboard.css';
-import { Settings2 } from 'lucide-react';
+import React from 'react';
+import '../assets/Css/About.css';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-// import userimg from '../assets/Image/11.jpg'
-import { CircleUser, LogOut,Store,LibraryBig} from 'lucide-react';
-function Dashboard() {
-  const navigate = useNavigate()
-  const handleLogout = () => {
-    navigate('/Home')
-  }
+import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'; // Import lucide icons
+// import Sidebar from './components/Sidebar.js';
+function About() {
   return (
-    <div>
-      <div className="side-bar">
-
-
-        <div className="bookName">
-
-          <h1 className="hell">Dashboard</h1>
-          <div className="sym"><Menu /></div>
-          {/* <p className="newyork">NewYork,USA</p> */} 
-        <div>
-          {/* <img src={userimg} alt="Book" className="userimg" /> */}
-        </div>
-        
-        </div>
-        <div className="d-c">
-          <ul>
-            <div className="icon-text">
-              <CircleUser /> <li>Accounts</li>
-            </div>
-            <div className="icon-text">
-              <Store />
-              <li className="mow">About us</li>
-            </div>
-            <div className="icon-text">
-              <LibraryBig />
-              <li className="mow">Essays</li>
-            </div>
-            <div className="icon-text">
-              <Settings2 /> <li className="mow">Settings</li>
-            </div>
-            <div className="icon-text" onClick={handleLogout}>
-              <LogOut />
-              <li className="mow">Logout</li>
-            </div>
-          </ul>
-        </div>
-      </div>
+    <>
       <div className="about">
         <h1 className="ab">About The Millions</h1>
       </div>
@@ -143,16 +99,16 @@ function Dashboard() {
                 <h4>follow us</h4>
                 <div class="social-links">
                   <Link to="/">
-                    <Facebook size={25} />
+                    <Facebook size={24} />
                   </Link>
                   <Link to="/">
-                    <Twitter size={25} />
+                    <Twitter size={24} />
                   </Link>
                   <Link to="/">
-                    <Instagram size={25} />
+                    <Instagram size={24} />
                   </Link>
                   <Link to="/">
-                    <Linkedin size={25} />
+                    <Linkedin size={24} />
                   </Link>
                 </div>
               </div>
@@ -160,8 +116,8 @@ function Dashboard() {
           </div>
         </footer>
       </div>
-    </div>
+    </>
   );
 }
 
-export default Dashboard;
+export default About;

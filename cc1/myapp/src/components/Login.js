@@ -1,8 +1,11 @@
 import '../assets/Css/Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'
+// import Dashboard from './components/Dashboard.js'
+// import Sidebar from './Sidebar'
 function Login() {
+    const navigate = useNavigate()
     function fun(event)
             {
                 event.preventDefault();
@@ -22,6 +25,9 @@ function Login() {
                         progress: undefined,
                         theme: "dark",
                         });
+                        setTimeout(()=>{
+                            navigate('/Dashboard')
+                    },5000)
                 }
                 else
                 {
@@ -43,15 +49,15 @@ function Login() {
     
     return (
         <>
-            <div className='login-wrapper'>
-
+        {/* <Sidebar/> */}
+            <div className='log-wrapper'>
                 <div class="di-wrapper">
-                    <form class="container-wrapper">
-                        <h1 class="m-wrapper">LOGIN</h1>
-                        <input type="text" name="" id="user" placeholder="Your name" class="mad-wrapper" required />
-                        <input type="password" name="" id="Password" placeholder="Password" class="mad-wrapper" required/>
-                        <div class="fun-wrapper">
-                        <button onClick={fun}class="fir-wrapper" type="submit">Login</button>
+                    <form class="containe-wrapper" onSubmit={fun}>
+                        <h1 class="m1-wrapper">LOGIN</h1>
+                        <input type="text" name="" id="user" placeholder="Your name" class="mad1-wrapper" required />
+                        <input type="password" name="" id="Password" placeholder="Password" class="mad1-wrapper" required/>
+                        <div class="fun1-wrapper">
+                        <button class="fir1-wrapper" type="submit">Login</button>
                         </div >
                     </form>
                 </div>

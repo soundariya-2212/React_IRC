@@ -9,29 +9,30 @@
     left:0;
     position:fixed;
 }
-.content
+.contentss
 {
     color:black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top:7rem;
+    padding-top:3rem;
     padding-left: 49rem;
     font-size:25px;
 }
-.p
+.paragraph
 {
     /* text-align:end; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:25rem;
+    padding-top:0rem;
 }
 body
 {
     background-color: rgb(170, 165, 165);
+    /* overflow: hidden; */
 }
-.net{
+.nets{
     color:black;
     display: flex;
     justify-content: center;
@@ -41,7 +42,7 @@ body
     font-size:40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.but
+.butt
 {
     height:5vh;
     width:8vw;
@@ -53,7 +54,7 @@ body
 .button
 {
     padding-left:48rem;
-    padding-top:7rem;
+    padding-top:6rem;
     display:flex;
     justify-content: center;
     align-items: center;

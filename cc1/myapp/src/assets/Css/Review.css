@@ -258,7 +258,16 @@
     height:400px;
     min-width: 266px;
     border-radius:10px;
-    padding-top:5px;
+    /* padding-top:5px; */
+}
+.hi4
+{
+    background-image: url("https://richincolor.com/wp-content/uploads/2019/01/lovestory.jpg");
+    height:400px;
+    min-width: 266px;
+    border-radius:10px;
+    background-size: cover;
+    background-position: center-bottom;
 }
 body
 {

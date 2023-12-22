@@ -6,6 +6,7 @@ ul{
 {
     top:0;
     left:0;
+    z-index:9999;
     margin:0;
     position:fixed;
     height:6vh;
