@@ -1,0 +1,34 @@
+import logo from './logo.svg';
+import './App.css';
+import Home from './Pages/Home.js'
+import About from './Pages/About.js'
+import Counter from './Pages/Counter.js'
+function App() {
+  return (
+    <>
+    <Home/>
+    <About/>
+   
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Learn React
+        </a>
+        <p>Counter</p>
+        <Counter/>
+      </header>
+    </div>
+    </>
+  );
+}
+
+export default App;
